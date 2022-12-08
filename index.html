@@ -16,9 +16,9 @@
     <main>
 
         <!-- HEADER -->
-        <header class="top-header">
+        <!-- <header class="top-header">
             <h1>The Weather App</h1>
-        </header>
+        </header> -->
 
         <!-- MAIN-CONTAINER -->
         <div class="main-content">
@@ -26,32 +26,174 @@
             <!-- SEARCH-CITY-SECTION -->
             <div class="search-container">
                 <h6>Search for a City:</h6>
-                <form class="input-city">
-                    <input id="search-input" class="city-search" placeholder="Enter City Name">
+                <form class="city">
+                    <input id="searchinputVal" class="search-inputVal" placeholder="Enter City Name">
                     <button class="searchbtn" id="searchbtn">Search</button>
                     <ul class="city-historyLi"></ul>
                 </form>
             </div>
 
             <!-- CURRENT-DAY-SECTION   -->
-            <div class="current-day-container">
-                <div class="todaysWeather">
-                    <h6>Current Forecast</h6>
-                    <p>Austin 12/4/22</p>
+            <!-- NEED: CITY, DATE, TEMP, WIND, HUMIDITY-->
+
+
+
+
+            <!-- <div class="current-day-container"> -->
+            <div class="todaysWeather">
+                <h6>Current Forecast</h6>
+                <!-- CITY -->
+                <div class="city" id="city">
+                </div>
+                <!-- DATE      12/7/2022-->
+                <div class="date" id="date">
+                </div>
+                <div class="temperature" id="temperature">
+                    <!-- HOW it should display later on -->
                     <p>Temperature: 51.96</p>
-                    <p>Wind Speed: 6.91</p>
+                </div>
+                <div class="windSpeed" id="windSpeed"></div>
+                <!-- HOW it should display later on -->
+                <p>Wind Speed: 6.91</p>
+                <div class="humidity" id="humidity">
+                    <!-- HOW it should display later on -->
                     <p>Humidity: 63%</p>
                 </div>
             </div>
+        </div>
 
-            <!-- 5-DAY-WEATHER -->
-            <div class="five-day-container">
-                <h6>5-Day Forecast:</h6>
-                <div class="fivedaycards">
+
+        <!-- 
+            <div class="current-day-container">
+                <div class="todaysWeather">
+                    <h6>Current Forecast</h6> -->
+        <!-- CITY -->
+        <!-- <div class="city" id="city">
+                    </div> -->
+        <!-- DATE      12/7/2022-->
+        <!-- <div class="date" id="date">
+                    </div>
+                    <div class="temperature" id="temperature"> -->
+        <!-- HOW it should display later on -->
+        <!-- <p>Temperature: 51.96</p>
+                    </div>
+                    <div class="windSpeed" id="windSpeed"></div> -->
+        <!-- HOW it should display later on -->
+        <!-- <p>Wind Speed: 6.91</p>
+                    <div class="humidity" id="humidity"> -->
+        <!-- HOW it should display later on -->
+        <!-- <p>Humidity: 63%</p>
+                    </div>
+                </div>
+            </div> -->
+
+        <!-- 5-DAY-WEATHER -->
+        <h6>5-Day Forecast:</h6>
+        <div class="five-day-container">
+            <div class="weather-card">
+                <!-- <h6>5-Day Forecast:</h6> -->
+                <!-- <div class="day-card"> -->
+                <div class="date1" id="date1">
+                    <!-- what date should display later -->
+                    <p>12/8/2022</p>
+                    <div class="weatherIcon"><img src="iconimage.png"></div>
+                    <div class="temperature2" id="temperature2">
+                        <!-- HOW it should display later on -->
+                        <p>Temperature: 51.96</p>
+                    </div>
+                    <div class="windSpeed2" id="windSpeed2"></div>
+                    <!-- HOW it should display later on -->
+                    <p>Wind Speed: 6.91</p>
+                    <div class="humidity2" id="humidity2">
+                        <!-- HOW it should display later on -->
+                        <p>Humidity: 63%</p>
+                    </div>
                 </div>
             </div>
+            <div class="weather-card">
+                <!-- <h6>5-Day Forecast:</h6> -->
+                <!-- <div class="day-card"> -->
+                <div class="date2" id="date2">
+                    <!-- what date should display later -->
+                    <p>12/9/2022</p>
+                    <div class="weatherIcon"><img src="iconimage.png"></div>
+                    <div class="temperature2" id="temperature2">
+                        <!-- HOW it should display later on -->
+                        <p>Temperature: 51.96</p>
+                    </div>
+                    <div class="windSpeed2" id="windSpeed2"></div>
+                    <!-- HOW it should display later on -->
+                    <p>Wind Speed: 6.91</p>
+                    <div class="humidity2" id="humidity2">
+                        <!-- HOW it should display later on -->
+                        <p>Humidity: 63%</p>
+                    </div>
+                </div>
+            </div>
+            <div class="weather-card">
+                <!-- <h6>5-Day Forecast:</h6> -->
+                <!-- <div class="day-card"> -->
+                <div class="date3" id="date3">
+                    <!-- what date should display later -->
+                    <p>12/10/2022</p>
+                    <div class="weatherIcon"><img src="iconimage.png"></div>
+                    <div class="temperature2" id="temperature2">
+                        <!-- HOW it should display later on -->
+                        <p>Temperature: 51.96</p>
+                    </div>
+                    <div class="windSpeed2" id="windSpeed2"></div>
+                    <!-- HOW it should display later on -->
+                    <p>Wind Speed: 6.91</p>
+                    <div class="humidity2" id="humidity2">
+                        <!-- HOW it should display later on -->
+                        <p>Humidity: 63%</p>
+                    </div>
+                </div>
+            </div>
+            <div class="weather-card">
+                <!-- <h6>5-Day Forecast:</h6> -->
+                <!-- <div class="day-card"> -->
+                <div class="date4" id="date4">
+                    <!-- what date should display later -->
+                    <p>12/11/2022</p>
+                    <div class="weatherIcon"><img src="iconimage.png"></div>
+                    <div class="temperature2" id="temperature2">
+                        <!-- HOW it should display later on -->
+                        <p>Temperature: 51.96</p>
+                    </div>
+                    <div class="windSpeed2" id="windSpeed2"></div>
+                    <!-- HOW it should display later on -->
+                    <p>Wind Speed: 6.91</p>
+                    <div class="humidity2" id="humidity2">
+                        <!-- HOW it should display later on -->
+                        <p>Humidity: 63%</p>
+                    </div>
+                </div>
+            </div>
+            <div class="weather-card">
+                <!-- <h6>5-Day Forecast:</h6> -->
+                <!-- <div class="day-card"> -->
+                <div class="date5" id="date5">
+                    <!-- what date should display later -->
+                    <p>12/12/2022</p>
+                    <div class="weatherIcon"><img src="iconimage.png"></div>
+                    <div class="temperature2" id="temperature2">
+                        <!-- HOW it should display later on -->
+                        <p>Temperature: 51.96</p>
+                    </div>
+                    <div class="windSpeed2" id="windSpeed2"></div>
+                    <!-- HOW it should display later on -->
+                    <p>Wind Speed: 6.91</p>
+                    <div class="humidity2" id="humidity2">
+                        <!-- HOW it should display later on -->
+                        <p>Humidity: 63%</p>
+                    </div>
+                </div>
+            </div>
+            
+        </div>
 
-            <script src="./Assets/js/script.js"></script>
+        <script src="./Assets/js/script.js"></script>
     </main>
 
     <!-- MAIN CONTAINER DIV -->

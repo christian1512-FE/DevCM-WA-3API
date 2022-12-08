@@ -30,7 +30,7 @@ p {
 
 
 /* HEADER */
-.top-header {
+/* .top-header {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -39,12 +39,12 @@ p {
     overflow: hidden;
     height: 300px;
     background-color: rgb(76, 162, 198);
-}
+} */
 
 /* MAIN CONTENT */
 .main-content {
-    position: relative;
     display: flex;
+    position: relative;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: center;
@@ -65,6 +65,7 @@ p {
 
 /* CURRENT DAY CONTAINER  */
 .current-day-container {
+   
     border: 4px;
     padding: 5px;
     margin: 10px;
@@ -75,7 +76,7 @@ p {
 
 
 /* FIVE DAY CONTAINER  */
-.five-day-container {
+/* .five-day-container {
     border: 4px;
     padding: 5px;
     margin: 10px;
@@ -83,7 +84,7 @@ p {
     background-color: rgb(255, 255, 255);
     box-shadow: 0 0 10px 2px;
     box-shadow: 0 0 10px 2px;
-}
+} */
 
 /* INPUT TEXT BOX */
 .city-search {
@@ -113,3 +114,28 @@ p {
 }
 
 
+
+.five-day-container {
+   display: flex;
+   flex-direction: row;
+   flex-wrap: wrap;
+    /* border: 4px;
+    padding: 5px;
+    margin: 10px; */
+    overflow: hidden;
+    background-color: rgb(255, 255, 255);
+    /* box-shadow: 0 0 10px 2px; */
+}
+
+
+.weather-card {
+    display: flex;
+    /* flex-wrap: wrap; */
+    border: 50px;
+    padding: 50px;
+    margin: 10px;
+    overflow: hidden;
+    background-color: rgb(255, 255, 255);
+    box-shadow: 0 0 10px 2px;
+    box-shadow: 0 0 10px 2px;
+}
