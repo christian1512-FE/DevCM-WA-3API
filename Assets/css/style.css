@@ -64,15 +64,6 @@ p {
     /* background-color: #ffffff;  */
 }
 
-/* TOP-CONTENT INCLUDING SEARCH & CURRENT DAY WEATHER*/
-/* .top-content {
-    display: flex;
-    flex-wrap: wrap;
-    margin: 20px;
-    padding: 20px;
-} */
-
-
 /* SEARCH CONTAINER */
 
 .main-content {
@@ -97,7 +88,7 @@ p {
 #todaysWeather {
     display: flex; 
     flex-direction: column; 
-    /* padding: 50px; */
+    padding: 5px;
     padding: 20px;
     /* margin: 50px; */
     overflow: hidden;
@@ -105,12 +96,11 @@ p {
     color: white;
     border-radius: 20px;
     width: 100%;
-
-
-
+    font-size: 20px;
+    
 }
 
-/* asdfadfasdfasdfasdfadsfadsfadsfasdfasdfasf */
+
 
 /* SEARCH BUTTON */
 .searchbtn { 
@@ -160,8 +150,6 @@ p {
     
 
 }
-
-
 
 footer {
     padding: 25px;
@@ -231,3 +219,4 @@ button {
 button:hover {
     background-color: rgb(94, 94, 94);
   }
+
