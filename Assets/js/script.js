@@ -127,7 +127,7 @@ function displayCurrentWeather(currentWeather, cityName) {
     document.getElementById("city").innerText = cityName;
     document.getElementById("description").innerText = currentWeather.weather[0].description;
     document.getElementById("date").innerText = currentWeather.dt_txt;
-    document.getElementById("weather-icon").src = "http://openweathermap.com/img/wn/" + currentWeather.weather[0].icon + "@2x.png";
+    document.getElementById("weather-icon").src = "https://openweathermap.com/img/wn/" + currentWeather.weather[0].icon + "@2x.png";
     document.getElementById("temperature").innerText = currentWeather.main.temp;
     document.getElementById("windSpeed").innerText = currentWeather.wind.speed + " MPH";
     document.getElementById("humidity").innerText = currentWeather.main.humidity + " %";
