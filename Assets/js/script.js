@@ -99,10 +99,12 @@ function getCityWeather(cityName) {
                     var cardArray = []
                     for (var i = 0; i < data.list.length; i++) {
                         var dateTime = data.list[i].dt_txt.split(' ')[1]
-                        if (dateTime === "12:00:00") {
-                            cardArray.push(data.list[i])
-                        }
+                    if (dateTime === "12:00:00") {
+                        cardArray.push(data.list[i])
                     }
+                }
+
+                    
                     var properName = data.city.name;
                     if (!previousCityArray.includes(properName)) {
                         previousCityArray.push(properName)
