@@ -120,14 +120,21 @@ function getCityWeather(cityName) {
 //TODAYS WEATHER CARD 
 function displayCurrentWeather(currentWeather, cityName) {
 
+// NEW
+    var date = new Date(currentWeather.dt * 1000); // Convert timestamp to milliseconds
+
     // todaysWeatherCardEl.style.display = 'flex';
     todaysWeatherCardEl.classList.remove('hide');
 
     // console.log('currentWeather', currentWeather);
     document.getElementById("city").innerText = cityName;
     document.getElementById("description").innerText = currentWeather.weather[0].description;
-    document.getElementById("date").innerText = currentWeather.dt_txt;
-    document.getElementById("weather-icon").src = "https://openweathermap.com/img/wn/" + currentWeather.weather[0].icon + "@2x.png";
+    // document.getElementById("date").innerText = currentWeather.dt_txt;
+    
+// NEW BELOW
+    document.getElementById("date").innerText = date.toLocaleDateString();
+
+    document.getElementById("weather-icon").src = "http://openweathermap.com/img/wn/" + currentWeather.weather[0].icon + "@2x.png";
     document.getElementById("temperature").innerText = currentWeather.main.temp;
     document.getElementById("windSpeed").innerText = currentWeather.wind.speed + " MPH";
     document.getElementById("humidity").innerText = currentWeather.main.humidity + " %";
@@ -152,8 +159,10 @@ function displayWeather(cardArray, cityName) {
 
         //DATE
         var date = document.createElement("p")
+
         date.textContent = ("Date: " + cardArray[i].dt_txt);
 
+    
         //DESCRIPTION
         var description = document.createElement("p")
         description.textContent = cardArray[i].weather[0].description;

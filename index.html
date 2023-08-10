@@ -1,67 +1,59 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <!-- CSS FILE -->
 
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Unbounded&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="./Assets/css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Unbounded&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./Assets/css/style.css" />
     <title>Weather App</title>
-</head>
+  </head>
 
-<body>
+  <body>
     <div class="container">
-        <div id="top-header">
-            <h1>Weather Dashboard</h1>
+      <div id="top-header">
+        <h1>Weather Dashboard</h1>
+      </div>
+
+      <div class="main-content">
+        <!-- TOP CONTENT -->
+        <div class="search-container">
+          <form id="user-form" class="Search-city-content">
+            <label class="form-label searchItem">Search For A City</label>
+            <input id="city-name" type="text" class="input-city searchItem" />
+            <button class="searchbtn searchItem" id="searchbtn">Search</button>
+            <ul class="city-pastLi searchItem" id="city-past"></ul>
+          </form>
         </div>
-
-        <div class="main-content">
-            <!-- TOP CONTENT -->
-            <div class="search-container">
-
-                <form id="user-form" class="Search-city-content">
-                    <label class="form-label searchItem">Search For A City</label>
-                    <input id="city-name" type="text" class="input-city searchItem">
-                    <button class="searchbtn searchItem" id="searchbtn">Search</button>
-                    <ul class="city-pastLi searchItem" id="city-past"></ul>
-                </form>
+        <div id="weather-container">
+          <div id="todaysWeather" class="hide">
+            <div>Date: <span id="date"></span></div>
+            <div>Weather In <span id="city"></span></div>
+            <div id="description"></div>
+            <div><img id="weather-icon" /></div>
+            <div>Temperature: <span id="temperature"></span></div>
+            <div>Wind: <span id="windSpeed"></span></div>
+            <div>Humidity: <span id="humidity"></span></div>
+          </div>
+          <div>
+            <div class="fiveday-title hide">
+              <h2>5-Day Forecast:</h2>
             </div>
-            <div id="weather-container">
-                <!-- <div id="todaysWeather" style="display: none;"></div> -->
-                <div id="todaysWeather" class="hide">
-    
-                    <div>Date: <span id="date"></span></div>
-                    <div>Weather In <span id="city"></div>
-                    <div id="description"></div>
-                    <div><img id="weather-icon" /></div>
-                    <div>Temperature: <span id="temperature"></div>
-                    <div>Wind: <span id="windSpeed"></div>
-                    <div>Humidity: <span id="humidity"></div>
-                </div>
-                <div>
-                    <div class="fiveday-title hide">
-                        <h2>5-Day Forecast:</h2>
-                    </div>
-                    <div id="five-day-container"></div>
-
-                </div>
-            </div>
+            <div id="five-day-container"></div>
+          </div>
         </div>
+      </div>
     </div>
 
-
-    <footer>
-        © Christian Mendez 2022
-    </footer>
+    <footer>© Christian Mendez 2022</footer>
 
     <script src="./Assets/js/script.js"></script>
-
-
-</body>
-
+  </body>
 </html>
